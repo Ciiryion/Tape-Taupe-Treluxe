@@ -32,7 +32,7 @@ public class ArduinoConnector : MonoBehaviour
         try
         {
             string data = serial.ReadLine();
-            Debug.Log("Reçu de l'Arduino: " + data);
+            //Debug.Log("Reçu de l'Arduino: " + data);
 
             // --- Traitement des données
             if (data.Trim() == "1")
