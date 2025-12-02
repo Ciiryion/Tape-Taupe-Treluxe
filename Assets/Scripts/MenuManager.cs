@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -14,5 +15,10 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void toMenu()
+    {
+        SceneManager.LoadScene("UiWork");
     }
 }
