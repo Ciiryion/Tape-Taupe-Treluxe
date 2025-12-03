@@ -16,14 +16,14 @@ public class PlaySound : MonoBehaviour
 
 
     [SerializeField] private InputActionReference debugActions;
-    int test = 50;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
         canActive = true;
-        StartCoroutine(taupeManagement());
+        //StartCoroutine(taupeManagement());
+        StartCoroutine(taupeStart());
     }
 
     private void Update()
@@ -36,9 +36,6 @@ public class PlaySound : MonoBehaviour
                 gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
             isActive = false;
         }
-
-        if (debugActions.action.IsPressed())
-            test++;
     }
 
     private IEnumerator taupeManagement()
@@ -73,5 +70,12 @@ public class PlaySound : MonoBehaviour
             StartCoroutine(taupeManagement());
         }
         
+    }
+
+    private IEnumerator taupeStart()
+    {
+        interval = Random.Range(5, 15);
+        yield return new WaitForSeconds(interval);
+        StartCoroutine(taupeManagement());
     }
 }
