@@ -61,5 +61,5 @@ void loop() {
   }
   String message = "button 0 : " + String(button0State) + " | button 45 : " + String(button45State) + " | button 90 : " + String(button90State) + " | button 135 : " + String(button135State) + " | button 180 : " + String(button180State);
   Serial.println(message);
-  delay(100);
+  delay(10);
 }
