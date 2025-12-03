@@ -1191,6 +1191,7 @@ GameObject:
   - component: {fileID: 810991833}
   - component: {fileID: 810991832}
   - component: {fileID: 810991834}
+  - component: {fileID: 810991835}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -1210,6 +1211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bcb6b3c42d0db248bf729df1cd2ba99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArduinoConnector
+  data: 
 --- !u!4 &810991833
 Transform:
   m_ObjectHideFlags: 0
@@ -1250,6 +1252,25 @@ MonoBehaviour:
   - {fileID: 762471990}
   - {fileID: 1157145904}
   - {fileID: 852694128}
+--- !u!114 &810991835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810991831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b0f5c8ae4a143488cd5dd7060667c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DebugButton
+  gameManager: {fileID: 810991831}
+  audioSources:
+  - {fileID: 545318932}
+  - {fileID: 61454853}
+  - {fileID: 1618881072}
+  - {fileID: 312940752}
+  - {fileID: 2076907563}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
