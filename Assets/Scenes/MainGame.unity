@@ -256,6 +256,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &359918281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: UI/Click
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 3c7022bf-7922-4f7c-a998-c437916075ad
 --- !u!1 &616391705
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +356,8 @@ MonoBehaviour:
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
-  debugActions: {fileID: 1547227969}
+  id: 3
+  debugActions: {fileID: 359918281}
 --- !u!82 &687049076
 AudioSource:
   m_ObjectHideFlags: 0
@@ -455,6 +470,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &734214734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: UI/MiddleClick
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: dad70c86-b58c-4b17-88ad-f5e53adf419e
+--- !u!114 &857899901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: UI/Click
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 3c7022bf-7922-4f7c-a998-c437916075ad
 --- !u!1 &1038325468
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +535,8 @@ MonoBehaviour:
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
-  debugActions: {fileID: 1547227969}
+  id: 4
+  debugActions: {fileID: 1771401494}
 --- !u!82 &1038325470
 AudioSource:
   m_ObjectHideFlags: 0
@@ -605,7 +649,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1204134590
+--- !u!114 &1193139252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -615,24 +659,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: UI/RightClick
+  m_Name: UI/Click
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: 44b200b1-1557-4083-816c-b22cbdf77ddf
---- !u!114 &1547227969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: UI/MiddleClick
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: dad70c86-b58c-4b17-88ad-f5e53adf419e
+  m_ActionId: 3c7022bf-7922-4f7c-a998-c437916075ad
 --- !u!1 &1617417740
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +790,20 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &1771401494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: UI/Click
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_ActionId: 3c7022bf-7922-4f7c-a998-c437916075ad
 --- !u!1 &1799852324
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +841,8 @@ MonoBehaviour:
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
-  debugActions: {fileID: 1547227969}
+  id: 2
+  debugActions: {fileID: 734214734}
 --- !u!82 &1799852326
 AudioSource:
   m_ObjectHideFlags: 0
@@ -947,7 +992,8 @@ MonoBehaviour:
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
-  debugActions: {fileID: 1547227969}
+  id: 1
+  debugActions: {fileID: 857899901}
 --- !u!82 &1897885169
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1097,7 +1143,8 @@ MonoBehaviour:
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
-  debugActions: {fileID: 1204134590}
+  id: 0
+  debugActions: {fileID: 1193139252}
 --- !u!82 &2080449807
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1243,6 +1290,9 @@ MonoBehaviour:
   sonsPlace:
   - {fileID: 2080449805}
   - {fileID: 1897885167}
+  - {fileID: 1799852324}
+  - {fileID: 687049074}
+  - {fileID: 1038325468}
 --- !u!4 &2119919495
 Transform:
   m_ObjectHideFlags: 0
@@ -1265,11 +1315,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119919493}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5bcb6b3c42d0db248bf729df1cd2ba99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArduinoConnector
+  data: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

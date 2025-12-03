@@ -1,6 +1,6 @@
+using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 
 public class PlaySound : MonoBehaviour
@@ -14,6 +14,12 @@ public class PlaySound : MonoBehaviour
     [SerializeField]
     private GameObject gameManager;
 
+    [SerializeField]
+    private int id;
+
+    ArduinoConnector arduinoManager;
+    String arduinoData;
+
 
     [SerializeField] private InputActionReference debugActions;
 
@@ -21,27 +27,77 @@ public class PlaySound : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
+        arduinoManager = gameManager.GetComponent<ArduinoConnector>();
         canActive = true;
-        //StartCoroutine(taupeManagement());
         StartCoroutine(taupeStart());
     }
 
     private void Update()
     {
-        if(debugActions.action.IsPressed() && isActive)
+        arduinoData = arduinoManager.data;
+
+        switch (id)
         {
-            if(isTaupe)
-                gameManager.gameObject.GetComponent<GameManager>().addScore();
-            else
-                gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
-            isActive = false;
+            case 0:
+                if (new string(arduinoData[11], 1) == "1" && isActive)
+                {
+                    if (isTaupe)
+                        gameManager.gameObject.GetComponent<GameManager>().addScore();
+                    else
+                        gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
+                    isActive = false;
+                }
+                    break;
+            case 1:
+                if (new string(arduinoData[27], 1) == "1" && isActive)
+                {
+                    if (isTaupe)
+                        gameManager.gameObject.GetComponent<GameManager>().addScore();
+                    else
+                        gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
+                    isActive = false;
+                }
+                break;
+            case 2:
+                if (new string(arduinoData[43], 1) == "1" && isActive)
+                {
+                    if (isTaupe)
+                        gameManager.gameObject.GetComponent<GameManager>().addScore();
+                    else
+                        gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
+                    isActive = false;
+                }
+                break;
+            case 3:
+                if (new string(arduinoData[60], 1) == "1" && isActive)
+                {
+                    if (isTaupe)
+                        gameManager.gameObject.GetComponent<GameManager>().addScore();
+                    else
+                        gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
+                    isActive = false;
+                }
+                break;
+            case 4:
+                if (new string(arduinoData[77], 1) == "1" && isActive)
+                {
+                    if (isTaupe)
+                        gameManager.gameObject.GetComponent<GameManager>().addScore();
+                    else
+                        gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
+                    isActive = false;
+                }
+                break;
+            default:
+                Debug.Log("id incorrect");
+                break;
         }
     }
 
     private IEnumerator taupeManagement()
     {
         //Il y a 65% de chances que le son soit une taupe
-        float rnd = Random.Range(0, 100);
+        float rnd = UnityEngine.Random.Range(0, 100);
         if (rnd < 65)
             isTaupe = true;
         else
@@ -50,19 +106,19 @@ public class PlaySound : MonoBehaviour
         //Gestion du son
         if (isTaupe && canActive)
         {
-            gameObject.GetComponent<AudioSource>().PlayOneShot(taupeSons[Random.Range(0, taupeSons.Length)]);
+            gameObject.GetComponent<AudioSource>().PlayOneShot(taupeSons[UnityEngine.Random.Range(0, taupeSons.Length)]);
             isActive = true;
             Debug.Log("isTaupe");
         }
         else
         {
-            gameObject.GetComponent<AudioSource>().PlayOneShot(feinteSons[Random.Range(0, feinteSons.Length)]);
+            gameObject.GetComponent<AudioSource>().PlayOneShot(feinteSons[UnityEngine.Random.Range(0, feinteSons.Length)]);
             isActive = true;
             Debug.Log("isFeinte");
         }
 
         //Interval de temps aleatoire avant le prochain son
-        interval = Random.Range(intervalMin, intervalMax);
+        interval = UnityEngine.Random.Range(intervalMin, intervalMax);
         Debug.Log("interval = " + interval);
         yield return new WaitForSeconds(interval);
         //Le joueur perd une vie si la coroutine se termine sans qu'il ait appuyé sur le bouton
@@ -81,7 +137,7 @@ public class PlaySound : MonoBehaviour
 
     private IEnumerator taupeStart()
     {
-        interval = Random.Range(5, 15);
+        interval = UnityEngine.Random.Range(5, 15);
         yield return new WaitForSeconds(interval);
         StartCoroutine(taupeManagement());
     }
