@@ -19,6 +19,11 @@ public class MenuManager : MonoBehaviour
 
     public void toMenu()
     {
-        SceneManager.LoadScene("UiWork");
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void changeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
