@@ -783,6 +783,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
+  - {fileID: 8300000, guid: 6c867b975d81601418620f2f91fac18c, type: 3}
+  - {fileID: 8300000, guid: b78aca8758215234492acb8b40f8682e, type: 3}
   gameManager: {fileID: 2119919493}
   id: 3
   debugActions: {fileID: 359918281}
@@ -1240,6 +1242,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
+  - {fileID: 8300000, guid: 6c867b975d81601418620f2f91fac18c, type: 3}
+  - {fileID: 8300000, guid: b78aca8758215234492acb8b40f8682e, type: 3}
   gameManager: {fileID: 2119919493}
   id: 4
   debugActions: {fileID: 1771401494}
@@ -2054,6 +2058,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
+  - {fileID: 8300000, guid: 6c867b975d81601418620f2f91fac18c, type: 3}
+  - {fileID: 8300000, guid: b78aca8758215234492acb8b40f8682e, type: 3}
   gameManager: {fileID: 2119919493}
   id: 2
   debugActions: {fileID: 734214734}
@@ -2209,6 +2215,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
+  - {fileID: 8300000, guid: 6c867b975d81601418620f2f91fac18c, type: 3}
+  - {fileID: 8300000, guid: b78aca8758215234492acb8b40f8682e, type: 3}
   gameManager: {fileID: 2119919493}
   id: 1
   debugActions: {fileID: 857899901}
@@ -2364,6 +2372,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
+  - {fileID: 8300000, guid: 6c867b975d81601418620f2f91fac18c, type: 3}
+  - {fileID: 8300000, guid: b78aca8758215234492acb8b40f8682e, type: 3}
   gameManager: {fileID: 2119919493}
   id: 0
   debugActions: {fileID: 1193139252}
