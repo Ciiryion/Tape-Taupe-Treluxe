@@ -4,8 +4,10 @@ public class GameManager : MonoBehaviour
 {
     private int vie, score;
     private bool defeat;
+    //[SerializeField]
+    //GameObject[] sonsPlace;
     [SerializeField]
-    GameObject[] sonsPlace;
+    AudioClip validSound, wrongSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,12 +29,14 @@ public class GameManager : MonoBehaviour
     public void addScore()
     {
         score++;
+        gameObject.GetComponent<AudioSource>().PlayOneShot(validSound);
         Debug.Log("score : " + score);
     }
 
     public void lifeManagement()
     {
         vie--;
+        gameObject.GetComponent<AudioSource>().PlayOneShot(wrongSound);
         Debug.Log("nombre de vie : " + vie);
         if (vie <= 0)
         {
