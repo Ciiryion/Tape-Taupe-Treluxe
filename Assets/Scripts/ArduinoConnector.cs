@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArduinoConnector : MonoBehaviour
 {
-    SerialPort serial = new SerialPort("COM5", 9600);
+    SerialPort serial = new SerialPort("COM6", 9600);
     public string data;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

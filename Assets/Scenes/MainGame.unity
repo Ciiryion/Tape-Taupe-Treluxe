@@ -777,8 +777,6 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
-  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
-  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
   - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
@@ -1236,8 +1234,6 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
-  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
-  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
   - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
@@ -1503,7 +1499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1306219287
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2052,8 +2048,6 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
-  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
-  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
   - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
@@ -2209,8 +2203,6 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
-  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
-  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
   - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
@@ -2366,8 +2358,6 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
-  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
-  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
   - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
   - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
