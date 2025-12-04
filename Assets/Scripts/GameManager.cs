@@ -13,8 +13,9 @@ public class GameManager : MonoBehaviour
     //GameObject[] sonsPlace;
     [SerializeField]
     AudioClip validSound, wrongSound;
-    [SerializeField] TMP_Text scoreTxt, timerTxt;
+    [SerializeField] TMP_Text scoreTxt, timerTxt, gameOverTxt;
     [SerializeField] Image[] vieTab;
+    [SerializeField] GameObject gameOverButton;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
         vie = 3;
         score = 0;
         defeat = false;
+        gameOverTxt.enabled = false;
+        gameOverButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -66,7 +69,8 @@ public class GameManager : MonoBehaviour
         
         if(defeat)
         {
-            Debug.Log("C'est perdu");
+            gameOverButton.SetActive(true);
+            gameOverTxt.enabled = true;
         }
     }
 

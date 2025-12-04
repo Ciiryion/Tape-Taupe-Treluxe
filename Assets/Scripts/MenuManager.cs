@@ -19,6 +19,7 @@ public class MenuManager : MonoBehaviour
 
     public void toMenu()
     {
+        Debug.Log("To menu");
         SceneManager.LoadScene("MainMenu");
     }
 

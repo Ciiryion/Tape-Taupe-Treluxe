@@ -777,6 +777,10 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
+  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
+  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
+  - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
+  - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
@@ -1230,6 +1234,10 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
+  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
+  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
+  - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
+  - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
@@ -1643,13 +1651,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1784294654}
   - {fileID: 523474369}
   - {fileID: 1306219287}
   - {fileID: 1297919395}
   - {fileID: 100673}
   - {fileID: 683789656}
   - {fileID: 759040234}
-  - {fileID: 1784294654}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1955,7 +1963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1784294656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2119919498}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: changeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1784294656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2028,6 +2048,10 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
+  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
+  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
+  - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
+  - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
@@ -2179,6 +2203,10 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
+  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
+  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
+  - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
+  - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
@@ -2330,6 +2358,10 @@ MonoBehaviour:
   intervalMin: 2
   taupeSons:
   - {fileID: 8300000, guid: 2e3a500f358b4b842b29bcee1a9eff3d, type: 3}
+  - {fileID: 8300000, guid: f8828150427e28c49b9815cc47c9d7aa, type: 3}
+  - {fileID: 8300000, guid: 3c2c42d98065a564083e60bfcfde5da9, type: 3}
+  - {fileID: 8300000, guid: ad6eb10715776c2448e760a2714f8daa, type: 3}
+  - {fileID: 8300000, guid: 0ead483bceaa93d4e872030a84d59846, type: 3}
   feinteSons:
   - {fileID: 8300000, guid: 97618138486c4cc4fb2e874d5904360c, type: 3}
   gameManager: {fileID: 2119919493}
@@ -2459,6 +2491,7 @@ GameObject:
   - component: {fileID: 2119919494}
   - component: {fileID: 2119919496}
   - component: {fileID: 2119919497}
+  - component: {fileID: 2119919498}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2482,10 +2515,12 @@ MonoBehaviour:
   wrongSound: {fileID: 8300000, guid: 2a64dbe9fc765244da2df86de0f367d1, type: 3}
   scoreTxt: {fileID: 100674}
   timerTxt: {fileID: 683789657}
+  gameOverTxt: {fileID: 759040235}
   vieTab:
   - {fileID: 1092319050}
   - {fileID: 1729537418}
   - {fileID: 608475265}
+  gameOverButton: {fileID: 1784294653}
 --- !u!4 &2119919495
 Transform:
   m_ObjectHideFlags: 0
@@ -2611,6 +2646,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2119919498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119919493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb223010c256bf0448b480d49da100d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuManager
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

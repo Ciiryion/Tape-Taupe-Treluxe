@@ -108,18 +108,18 @@ public class PlaySound : MonoBehaviour
         {
             gameObject.GetComponent<AudioSource>().PlayOneShot(taupeSons[UnityEngine.Random.Range(0, taupeSons.Length)]);
             isActive = true;
-            Debug.Log("isTaupe");
+            //Debug.Log("isTaupe");
         }
         else
         {
             gameObject.GetComponent<AudioSource>().PlayOneShot(feinteSons[UnityEngine.Random.Range(0, feinteSons.Length)]);
             isActive = true;
-            Debug.Log("isFeinte");
+            //Debug.Log("isFeinte");
         }
 
         //Interval de temps aleatoire avant le prochain son
         interval = UnityEngine.Random.Range(intervalMin, intervalMax);
-        Debug.Log("interval = " + interval);
+        //Debug.Log("interval = " + interval);
         yield return new WaitForSeconds(interval);
 
         /*
