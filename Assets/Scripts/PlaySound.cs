@@ -121,11 +121,14 @@ public class PlaySound : MonoBehaviour
         interval = UnityEngine.Random.Range(intervalMin, intervalMax);
         Debug.Log("interval = " + interval);
         yield return new WaitForSeconds(interval);
+
+        /*
         //Le joueur perd une vie si la coroutine se termine sans qu'il ait appuyé sur le bouton
         if (isTaupe && isActive)
         {
             gameManager.gameObject.GetComponent<GameManager>().lifeManagement();
         }
+        */
 
         //Si le joueur a perdu on ne relance pas la coroutine
         if (!gameManager.gameObject.GetComponent<GameManager>().getDefeat())
