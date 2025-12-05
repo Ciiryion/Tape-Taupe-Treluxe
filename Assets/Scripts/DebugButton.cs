@@ -16,7 +16,7 @@ public class DebugButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        arduinoData = arduinoManager.data;
+        arduinoData = ArduinoConnector.Instance.LireDonnees();
         if (new string(arduinoData[11],1) == "1")
         {
             audioSources[0].Play();

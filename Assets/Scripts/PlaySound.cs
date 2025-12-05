@@ -34,7 +34,7 @@ public class PlaySound : MonoBehaviour
 
     private void Update()
     {
-        arduinoData = arduinoManager.data;
+        arduinoData = ArduinoConnector.Instance.LireDonnees();
 
         switch (id)
         {

@@ -1,51 +1,79 @@
 using System;
+using System.IO;
 using System.IO.Ports;
+using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 
 public class ArduinoConnector : MonoBehaviour
 {
-    SerialPort serial = new SerialPort("COM6", 9600);
-    public string data;
+    public static ArduinoConnector Instance;
+    public SerialPort serial;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    void Awake()
     {
+        // Pattern Singleton
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Garde cet objet vivant entre les scènes
+            OuvrirConnexion();
+        }
+        else
+        {
+            // Si un autre ArduinoManager existe déjà (ex: retour au menu), on détruit le nouveau
+            Destroy(gameObject);
+        }
+    }
+
+    void OuvrirConnexion()
+    {
+        serial = new SerialPort("COM5", 9600); // Remplacez par votre port/baudrate
         try
         {
             serial.Open();
             serial.ReadTimeout = 20;
-
             // --- AJOUTEZ CES DEUX LIGNES ---
             serial.DtrEnable = true; // Indispensable pour beaucoup d'Arduinos
             serial.RtsEnable = true; // Souvent nécessaire aussi
             // -------------------------------
-
-            Debug.Log("Port ouvert. DTR/RTS activés.");
+            Debug.Log("Port ouvert");
         }
-        catch (Exception ex)
+        catch (System.Exception e)
         {
-            Debug.LogError("Erreur ouverture: " + ex.Message);
+            Debug.LogError("Erreur port série: " + e.Message);
+        }
+    }
+
+    // Très important : Fermer le port quand on quitte le jeu
+    void OnApplicationQuit()
+    {
+        if (serial != null && serial.IsOpen)
+        {
+            serial.Close();
+            Debug.Log("Port fermé à la fermeture de l'app");
         }
     }
 
     // Update is called once per frame
-    void Update()
+    public string LireDonnees()
     {
-        try
+        if (serial != null && serial.IsOpen)
         {
-            data = serial.ReadLine();
+            try
+            {
+                return serial.ReadLine();
+            }
+            catch (System.TimeoutException)
+            {
+                return null;
+            }
         }
-        catch (TimeoutException)
-        {
-            // On ignore : l'Arduino n'a pas envoyé de ligne complète dans les 500ms
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError("Erreur série inattendue: " + ex.Message);
-        }
+        return null;
     }
 
-    public String getArduinoData()
+    void Update()
     {
-        return data;
+        Debug.Log(serial.ReadLine());
     }
 }

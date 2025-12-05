@@ -3789,6 +3789,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1949721704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1830693677577906201, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_Name
+      value: ArduinoManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2166.204
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1229.1447
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900956007134004780, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c43f0088362b9146913be20fe2a13ba, type: 3}
 --- !u!1 &2080449805
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,7 +4011,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2119919495}
   - component: {fileID: 2119919494}
-  - component: {fileID: 2119919496}
   - component: {fileID: 2119919497}
   - component: {fileID: 2119919498}
   m_Layer: 0
@@ -4002,19 +4058,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2119919496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119919493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bcb6b3c42d0db248bf729df1cd2ba99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ArduinoConnector
-  data: 
 --- !u!82 &2119919497
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4141,3 +4184,4 @@ SceneRoots:
   - {fileID: 473303135}
   - {fileID: 1574871818}
   - {fileID: 163931577}
+  - {fileID: 1949721704}
