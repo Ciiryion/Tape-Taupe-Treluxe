@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
         {
             gameOverButton.SetActive(true);
             gameOverTxt.enabled = true;
+            Time.timeScale = 0;
         }
     }
 
