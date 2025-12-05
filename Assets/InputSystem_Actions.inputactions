@@ -104,6 +104,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "DebugInstantDeath",
+                    "type": "Button",
+                    "id": "362fcd2a-0f82-4e28-a955-418a9dc98374",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -533,6 +542,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "DebugSounds",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "124bc0e3-fb76-4d9b-83f6-357b706e54e2",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DebugInstantDeath",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

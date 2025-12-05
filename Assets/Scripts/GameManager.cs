@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -16,10 +17,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text scoreTxt, timerTxt, gameOverTxt;
     [SerializeField] Image[] vieTab;
     [SerializeField] GameObject gameOverButton;
+    [SerializeField] private InputActionReference debugActions;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        debugActions.action.Enable();
         vie = 3;
         score = 0;
         defeat = false;
@@ -30,6 +33,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //debug instant game over
+        if (debugActions.action.IsPressed())
+        {
+            vie = 0;
+            defeat=true;
+        }
+
         //Gestion du timer (non fonctionnel)
         deltaTimer += Time.deltaTime;
         minutes = Mathf.FloorToInt(deltaTimer / 60F);
