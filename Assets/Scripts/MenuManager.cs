@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,7 +19,6 @@ public class MenuManager : MonoBehaviour
 
     public void toMenu()
     {
-        Debug.Log("To menu");
         SceneManager.LoadScene("MainMenu");
     }
 

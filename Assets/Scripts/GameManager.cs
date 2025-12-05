@@ -102,6 +102,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void testButton()
+    {
+        vie--;
+    }
+
     public bool getDefeat()
     {
         return defeat;
