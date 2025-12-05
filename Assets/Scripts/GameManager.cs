@@ -32,8 +32,8 @@ public class GameManager : MonoBehaviour
     {
         //Gestion du timer (non fonctionnel)
         deltaTimer += Time.deltaTime;
-        minutes = Mathf.FloorToInt(Time.deltaTime / 60F);
-        seconds = Mathf.FloorToInt(Time.deltaTime - minutes * 60);
+        minutes = Mathf.FloorToInt(deltaTimer / 60F);
+        seconds = Mathf.FloorToInt(deltaTimer - minutes * 60);
         niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
         timerTxt.text = niceTime;
 
